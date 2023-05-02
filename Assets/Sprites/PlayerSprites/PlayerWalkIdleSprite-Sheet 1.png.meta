@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: da216b5094230bf469f0d80147633d6c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 3
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77caa505bfc3ffc429c278afc0b4f4b9
+      internalID: -2129947978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 3
+        width: 16
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8afe6b15e6399d4dae85d203ea1a819
+      internalID: 1250402014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa188d62e6ac7904b85105978e9d3e7b
+      internalID: -490364541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855c27942baa3894eb38d50cf60deedb
+      internalID: 1852210595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 3
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3850c1a869449c54bbf12c4df11922fd
+      internalID: -1954151151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 3
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93ea559acbb4c84a965c9ab0f2dd2aa
+      internalID: -2056700317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 3
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6f36111d7b1f346961165d9f3bd84d
+      internalID: 82792637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 3
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b120c32aaa8524e98bdad50f395d50
+      internalID: 181790747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 3
+        width: 15
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d132fc16e7b2c224d83e0eb600a09802
+      internalID: -1573656610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d85dab2ea7306468f37488146ec434
+      internalID: -404500082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 5
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b542120819834584e8423faadb135f81
+      internalID: -85741595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 5
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c26bf1eb8b21044a80e35daa0eb3d6c
+      internalID: -613959483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 3
+        width: 15
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ba0231db3425e49b6d052c3a0e1ca6
+      internalID: 1031779567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 3
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfa23ad101e8c94bb2242c25ef8541f
+      internalID: -433990282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 5
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900ea06f9ba14fa4b80f04040808d55a
+      internalID: 1584871019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 5
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e1601e80b776643a8f2aa612da3cb2
+      internalID: 756338480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 0
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d00322e2831a6445a3ae9fc4b80fc3a
+      internalID: 98474116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 0
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5a3d63e9669e24faa282c71c0b10c7
+      internalID: -986966175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 2
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c839a3277f2a9784e86fae5b886cb902
+      internalID: -788145563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678524bd2bbbcc24996568fd92df704c
+      internalID: -1306982872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7b5a7d19d09aa439fbe379955103ea
+      internalID: -996420293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ebe6ca19ca7b14f961d5be3792c9e8
+      internalID: -1710325572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 0
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2728841e2cca84d9a21db66bb7b356
+      internalID: 1086243523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 2
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ece46a492ad7c479a29d0be97e20d6
+      internalID: 437139860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 0
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f8743e92f51024fba81451db27ed9b
+      internalID: 197903128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 0
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2e582218692d54b974857db4a09ee3
+      internalID: -75746950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d290a74594a6de479c87eb52a285388
+      internalID: -929941472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb11d7afadc98b4b9f5664f1bc87379
+      internalID: 2119488122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 0
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaf4fe30f90e274395c434c24c9288a
+      internalID: 1525452854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 0
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25fe4e209860cd4db2a27ba67b99525
+      internalID: 853015598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 0
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ff463babf502c4c9b8c2531121e6a9
+      internalID: 761874417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkIdleSprite-Sheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 2
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c3ef41d7b327a4ca3fe24f537a5d4c
+      internalID: -1326539777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlayerWalkIdleSprite-Sheet 1_26: -929941472
+      PlayerWalkIdleSprite-Sheet 1_14: 1584871019
+      PlayerWalkIdleSprite-Sheet 1_3: 1852210595
+      PlayerWalkIdleSprite-Sheet 1_16: 98474116
+      PlayerWalkIdleSprite-Sheet 1_10: -85741595
+      PlayerWalkIdleSprite-Sheet 1_25: -75746950
+      PlayerWalkIdleSprite-Sheet 1_31: -1326539777
+      PlayerWalkIdleSprite-Sheet 1_0: -2129947978
+      PlayerWalkIdleSprite-Sheet 1_11: -613959483
+      PlayerWalkIdleSprite-Sheet 1_18: -788145563
+      PlayerWalkIdleSprite-Sheet 1_1: 1250402014
+      PlayerWalkIdleSprite-Sheet 1_17: -986966175
+      PlayerWalkIdleSprite-Sheet 1_5: -2056700317
+      PlayerWalkIdleSprite-Sheet 1_22: 1086243523
+      PlayerWalkIdleSprite-Sheet 1_7: 181790747
+      PlayerWalkIdleSprite-Sheet 1_15: 756338480
+      PlayerWalkIdleSprite-Sheet 1_12: 1031779567
+      PlayerWalkIdleSprite-Sheet 1_20: -996420293
+      PlayerWalkIdleSprite-Sheet 1_8: -1573656610
+      PlayerWalkIdleSprite-Sheet 1_9: -404500082
+      PlayerWalkIdleSprite-Sheet 1_28: 1525452854
+      PlayerWalkIdleSprite-Sheet 1_13: -433990282
+      PlayerWalkIdleSprite-Sheet 1_23: 437139860
+      PlayerWalkIdleSprite-Sheet 1_2: -490364541
+      PlayerWalkIdleSprite-Sheet 1_30: 761874417
+      PlayerWalkIdleSprite-Sheet 1_29: 853015598
+      PlayerWalkIdleSprite-Sheet 1_6: 82792637
+      PlayerWalkIdleSprite-Sheet 1_4: -1954151151
+      PlayerWalkIdleSprite-Sheet 1_24: 197903128
+      PlayerWalkIdleSprite-Sheet 1_19: -1306982872
+      PlayerWalkIdleSprite-Sheet 1_27: 2119488122
+      PlayerWalkIdleSprite-Sheet 1_21: -1710325572
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
