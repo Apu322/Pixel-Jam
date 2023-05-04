@@ -8,6 +8,7 @@ public class LightController : MonoBehaviour
     private Rigidbody2D rigid;
     private Vector2 velocity;
     private Vector2 curPos;
+    [SerializeField]
     private float moveVel;
     private float xAxis;
     private float yAxis;
@@ -17,7 +18,6 @@ public class LightController : MonoBehaviour
     void Start()
     {
         magnitude = 5;
-        moveVel = 0.5f;
         velocity = Vector2.zero;
         rigid = GetComponent<Rigidbody2D>();
     }
@@ -27,8 +27,9 @@ public class LightController : MonoBehaviour
         xAxis = Input.GetAxisRaw("Horizontal");
         yAxis = Input.GetAxisRaw("Vertical");
         curPos += new Vector2(xAxis, yAxis) * moveVel;
-        curPos = new Vector2(Mathf.Clamp(curPos.x, curPos.x - 8, curPos.x + 10),
-                             Mathf.Clamp(curPos.y, curPos.y - 6, curPos.y + 4));
+        Vector3 cameraPos = Camera.main.transform.position;
+        curPos = new Vector2(Mathf.Clamp(curPos.x, cameraPos.x - 8, cameraPos.x + 8),
+                             Mathf.Clamp(curPos.y, cameraPos.y - 4, cameraPos.y + 4));
     }
     // Update is called once per frame
     void FixedUpdate()
