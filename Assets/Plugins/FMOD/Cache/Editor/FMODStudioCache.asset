@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: FMOD/Mummy Mystery v0.1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638185650658979853
+  lastModified: 638187862336415487
   FileSizes:
   - Name: Desktop
     Value: 2944
@@ -97,7 +97,7 @@ MonoBehaviour:
   - {fileID: -3670994362173401461}
   StringsBanks:
   - {fileID: 9043133116764929891}
-  cacheTime: 638185650658990975
+  cacheTime: 638187862336425517
   cacheVersion: 131603
 --- !u!114 &9043133116764929891
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   Path: FMOD/Mummy Mystery v0.1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638185650658990975
+  lastModified: 638187862336425517
   FileSizes:
   - Name: Desktop
     Value: 800
