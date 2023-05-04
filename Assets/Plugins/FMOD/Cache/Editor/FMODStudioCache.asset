@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 7996541886426711264}
   StringsBanks:
   - {fileID: 3476025359337096027}
-  cacheTime: 638188337712711067
+  cacheTime: 638188395013812429
   cacheVersion: 131603
 --- !u!114 &3476025359337096027
 MonoBehaviour:
@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638188337712711067
+  lastModified: 638188395013812429
   FileSizes:
   - Name: Desktop
     Value: 808
@@ -82,9 +82,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Game_Status
+  m_Name: parameter:/Music/game_status
   m_EditorClassIdentifier: 
-  Name: Game_Status
+  Name: game_status
   StudioPath: 
   Min: 0
   Max: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638188337712699123
+  lastModified: 638188395013801054
   FileSizes:
   - Name: Desktop
     Value: 1085920
