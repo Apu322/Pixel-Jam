@@ -48,19 +48,14 @@ public class Movement : MonoBehaviour
     {
         anim = GetComponent<Animator>(); 
         rigid = GetComponent<Rigidbody2D>();
-        framesToSkip = 1;
     }                               
 
     // Update is called once per frame
     void Update()
     {
-        framesSkipped += 1;
-        if (framesSkipped > framesToSkip)
-        {
-            xAxis = Input.GetAxisRaw("Horizontal");
-            yAxis = Input.GetAxisRaw("Vertical");
-            framesSkipped = 0;
-        }
+        xAxis = Input.GetAxisRaw("Horizontal_Key");
+        yAxis = Input.GetAxisRaw("Vertical_Key");
+        framesSkipped = 0;
     }
 
     private void FixedUpdate()
@@ -78,6 +73,7 @@ public class Movement : MonoBehaviour
             stance = "Idle";
         }
         Debug.Log("x: " + currentX + ", y: " + currentY);
+        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         ChangeAnimationState(stance + "_" + currentX + "_" + currentY);
     }
 

@@ -11,8 +11,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: left
     positiveButton: right
-    altNegativeButton: a
-    altPositiveButton: d
+    altNegativeButton: 7
+    altPositiveButton: 8
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -27,8 +27,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: down
     positiveButton: up
-    altNegativeButton: s
-    altPositiveButton: w
+    altNegativeButton: 5
+    altPositiveButton: 6
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -150,35 +150,35 @@ InputManager:
     axis: 2
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Horizontal
+    m_Name: Horizontal_Key
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
+    negativeButton: a
+    positiveButton: d
+    altNegativeButton: 1
+    altPositiveButton: 2
     gravity: 0
     dead: 0.19
     sensitivity: 1
-    snap: 0
+    snap: 1
     invert: 0
-    type: 2
+    type: 0
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Vertical
+    m_Name: Vertical_Key
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
+    negativeButton: s
+    positiveButton: w
+    altNegativeButton: 3
+    altPositiveButton: 4
     gravity: 0
     dead: 0.19
     sensitivity: 1
-    snap: 0
-    invert: 1
-    type: 2
+    snap: 1
+    invert: 0
+    type: 0
     axis: 1
     joyNum: 0
   - serializedVersion: 3
@@ -485,3 +485,4 @@ InputManager:
     type: 2
     axis: 5
     joyNum: 0
+  m_UsePhysicalKeys: 0
