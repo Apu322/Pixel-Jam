@@ -7,9 +7,11 @@ public class LightController : MonoBehaviour
 
     private Rigidbody2D rigid;
     private Vector2 velocity;
-    private Vector2 curPos;
     [SerializeField]
-    private float moveVel;
+    private float forceMag;
+
+    [SerializeField]
+    private float frictionMag;
     private float xAxis;
     private float yAxis;
     private float magnitude;
@@ -26,21 +28,19 @@ public class LightController : MonoBehaviour
     {
         xAxis = Input.GetAxisRaw("Horizontal");
         yAxis = Input.GetAxisRaw("Vertical");
-        curPos += new Vector2(xAxis, yAxis) * moveVel;
         Vector3 cameraPos = Camera.main.transform.position;
-        curPos = new Vector2(Mathf.Clamp(curPos.x, cameraPos.x - 8, cameraPos.x + 8),
-                             Mathf.Clamp(curPos.y, cameraPos.y - 4, cameraPos.y + 4));
+        Vector2 clampedPos = new Vector2(Mathf.Clamp(transform.position.x, cameraPos.x - 8, cameraPos.x + 8),
+                             Mathf.Clamp(transform.position.y, cameraPos.y - 4, cameraPos.y + 4));
+        transform.position = clampedPos;
     }
     // Update is called once per frame
     void FixedUpdate()
     {
 
-      //  Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-      //  worldPosition.z = 0;
-
-      //  Vector3 relative = transform.position - worldPosition;
-      //  float distance = relative.magnitude;
-      //  Vector3 direction = relative.normalized;
-        transform.position = Vector2.SmoothDamp(transform.position, curPos, ref velocity, 0.3f);
+        Vector2 force = new Vector2(xAxis, yAxis);
+        force = force * forceMag;
+        Vector2 frictionForce = -rigid.velocity.normalized;
+        frictionForce = frictionForce * frictionMag;
+        rigid.velocity = rigid.velocity + force + frictionForce;
     }
 }
