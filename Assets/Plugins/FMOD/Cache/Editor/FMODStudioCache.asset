@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 7996541886426711264}
   StringsBanks:
   - {fileID: 3476025359337096027}
-  cacheTime: 638188395013812429
+  cacheTime: 638188724165451317
   cacheVersion: 131603
 --- !u!114 &3476025359337096027
 MonoBehaviour:
@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638188395013812429
+  lastModified: 638188724165451317
   FileSizes:
   - Name: Desktop
     Value: 808
@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638188395013801054
+  lastModified: 638188724165441313
   FileSizes:
   - Name: Desktop
     Value: 1085920
