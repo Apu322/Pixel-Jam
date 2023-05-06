@@ -70,12 +70,13 @@ MonoBehaviour:
   - {fileID: 8784590659080524253}
   - {fileID: 984431439314952245}
   - {fileID: -7232441696371935276}
+  - {fileID: 5074396720389672945}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7996541886426711264}
   StringsBanks:
   - {fileID: 3476025359337096027}
-  cacheTime: 638189609115409620
+  cacheTime: 638189615157042036
   cacheVersion: 131603
 --- !u!114 &984431439314952245
 MonoBehaviour:
@@ -120,11 +121,38 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638189609115409620
+  lastModified: 638189615157042036
   FileSizes:
   - Name: Desktop
-    Value: 964
+    Value: 1000
   Exists: 1
+--- !u!114 &5074396720389672945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/torch
+  m_EditorClassIdentifier: 
+  Path: event:/torch
+  Guid:
+    Data1: -1571094526
+    Data2: 1244654589
+    Data3: 763223220
+    Data4: 1511412236
+  Banks:
+  - {fileID: 7996541886426711264}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1274
 --- !u!114 &6937909995677701911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,10 +194,10 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638189609115396913
+  lastModified: 638189615157031656
   FileSizes:
   - Name: Desktop
-    Value: 1599552
+    Value: 1615968
   Exists: 1
 --- !u!114 &8784590659080524253
 MonoBehaviour:
