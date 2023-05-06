@@ -496,7 +496,7 @@ MonoBehaviour:
   sourceProjectPath: FMOD/Mummy_Mystery/Mummy_Mystery.fspro
   sourceBankPath: FMOD/Mummy_Mystery/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0

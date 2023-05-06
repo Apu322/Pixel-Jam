@@ -80,6 +80,9 @@
 		<relationship name="modules">
 			<destination>{222481a9-d09e-4e13-acd3-20b5bf1a1a16}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{699e849a-b919-4f92-a963-b0f38a72c3e6}</destination>
+		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{eb6db852-5577-411c-8829-77daba9af25f}">
 		<relationship name="modules">
@@ -120,14 +123,17 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{222481a9-d09e-4e13-acd3-20b5bf1a1a16}">
+		<property name="isAsync">
+			<value>true</value>
+		</property>
 		<property name="length">
-			<value>0.375</value>
+			<value>2</value>
 		</property>
 		<property name="voiceStealing">
 			<value>3</value>
 		</property>
 		<property name="maxVoices">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{c480352f-8a31-4c0d-be66-ebb928aa5e28}</destination>
@@ -143,7 +149,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{8513e997-d405-4806-8937-734865e697f1}">
 		<property name="volume">
-			<value>-16</value>
+			<value>-24</value>
 		</property>
 		<property name="name">
 			<value>Footsteps_Concrete</value>
@@ -170,6 +176,17 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{833a3355-5313-4f9b-af80-35f29c9108bc}</destination>
+		</relationship>
+	</object>
+	<object class="TempoMarker" id="{699e849a-b919-4f92-a963-b0f38a72c3e6}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{e67e25b0-a062-46a8-8805-0a20310c394c}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{6bec76cf-7fa0-4670-9edf-954c4cdad071}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{88cfe89f-1537-4053-995f-c1e05f82a671}">
@@ -272,6 +289,7 @@
 	<object class="MixerBusEffectChain" id="{939c2b37-091a-4a30-83e3-8d77bfcb4665}">
 		<relationship name="effects">
 			<destination>{1d5a87e8-fc5b-42a1-b8aa-6dcc1279e944}</destination>
+			<destination>{860be603-b92a-4aa3-9373-954e8055e47b}</destination>
 			<destination>{4c909a8b-4ac6-4940-800c-2ac664f08b9d}</destination>
 		</relationship>
 	</object>
@@ -284,6 +302,11 @@
 	<object class="MixerBusPanner" id="{ee5b1c65-b2ad-431d-af58-4cd373cbb768}" />
 	<object class="MixerBusFader" id="{40eec1d2-e5c7-47cd-ae2f-8d4962558ae6}" />
 	<object class="MixerBusFader" id="{1d5a87e8-fc5b-42a1-b8aa-6dcc1279e944}" />
+	<object class="ThreeEQEffect" id="{860be603-b92a-4aa3-9373-954e8055e47b}">
+		<property name="highGain">
+			<value>-22.5</value>
+		</property>
+	</object>
 	<object class="SFXReverbEffect" id="{4c909a8b-4ac6-4940-800c-2ac664f08b9d}">
 		<property name="decayTime">
 			<value>2000</value>
