@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5060894113176253115
+--- !u!114 &-7232441696371935276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,24 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
+  m_Name: event:/mx_mystery
   m_EditorClassIdentifier: 
-  Path: event:/Music
+  Path: event:/mx_mystery
   Guid:
-    Data1: -1726350639
-    Data2: 1327049893
-    Data3: -745230915
-    Data4: -267766466
+    Data1: -153680848
+    Data2: 1092962794
+    Data3: 568515482
+    Data4: -1646126364
   Banks:
   - {fileID: 7996541886426711264}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 5491835443562362434}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 79200
+  Length: 38400
+--- !u!114 &-5009386802394101384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/game_status
+  m_EditorClassIdentifier: 
+  Name: game_status
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1870700092
+    data2: 2184238448
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,14 +67,44 @@ MonoBehaviour:
   - {fileID: 3476025359337096027}
   - {fileID: 7996541886426711264}
   EditorEvents:
-  - {fileID: -5060894113176253115}
+  - {fileID: 8784590659080524253}
+  - {fileID: 984431439314952245}
+  - {fileID: -7232441696371935276}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7996541886426711264}
   StringsBanks:
   - {fileID: 3476025359337096027}
-  cacheTime: 638188724165451317
+  cacheTime: 638189309577203921
   cacheVersion: 131603
+--- !u!114 &984431439314952245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music
+  m_EditorClassIdentifier: 
+  Path: event:/music
+  Guid:
+    Data1: -1726350639
+    Data2: 1327049893
+    Data3: -745230915
+    Data4: -267766466
+  Banks:
+  - {fileID: 7996541886426711264}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5009386802394101384}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 79200
 --- !u!114 &3476025359337096027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,12 +120,12 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638188724165451317
+  lastModified: 638189309577203921
   FileSizes:
   - Name: Desktop
-    Value: 808
+    Value: 964
   Exists: 1
---- !u!114 &5491835443562362434
+--- !u!114 &6937909995677701911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,19 +135,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/game_status
+  m_Name: parameter:/footsteps/Floor_type
   m_EditorClassIdentifier: 
-  Name: game_status
+  Name: Floor_type
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1870700092
-    data2: 2184238448
-  Type: 0
+    data1: 1063092437
+    data2: 2994306758
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Stone
+  - Sand
   Exists: 1
 --- !u!114 &7996541886426711264
 MonoBehaviour:
@@ -111,8 +166,36 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638188724165441313
+  lastModified: 638189309577195580
   FileSizes:
   - Name: Desktop
-    Value: 1085920
+    Value: 1599392
   Exists: 1
+--- !u!114 &8784590659080524253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/footsteps
+  Guid:
+    Data1: 1545407359
+    Data2: 1322777095
+    Data3: 645120668
+    Data4: 1932299462
+  Banks:
+  - {fileID: 7996541886426711264}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6937909995677701911}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 375

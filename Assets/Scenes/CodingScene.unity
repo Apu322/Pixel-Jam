@@ -279,6 +279,10 @@ GameObject:
   - component: {fileID: 422944673}
   - component: {fileID: 422944675}
   - component: {fileID: 422944676}
+  - component: {fileID: 422944677}
+  - component: {fileID: 422944678}
+  - component: {fileID: 422944679}
+  - component: {fileID: 422944680}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -433,6 +437,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.125}
   m_EdgeRadius: 0
+--- !u!114 &422944677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422944670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -153680848
+      Data2: 1092962794
+      Data3: 568515482
+      Data4: -1646126364
+    Path: event:/mx_mystery
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &422944678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422944670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+--- !u!114 &422944679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422944670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1545407359
+      Data2: 1322777095
+      Data3: 645120668
+      Data4: 1932299462
+    Path: event:/footsteps
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Floor_type
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &422944680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422944670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3217c0d213d4b19840adf672257624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsEvent:
+    Guid:
+      Data1: 1545407359
+      Data2: 1322777095
+      Data3: 645120668
+      Data4: 1932299462
+    Path: event:/footsteps
 --- !u!1 &453557572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1471,6 @@ GameObject:
   - component: {fileID: 1349134504}
   - component: {fileID: 1349134506}
   - component: {fileID: 1349134507}
-  - component: {fileID: 1349134508}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -22138,18 +22237,6 @@ CompositeCollider2D:
       - {x: 33, y: -49.50003}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!114 &1349134508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349134500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08fb99861a070b4198735b919960e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1417776969
 PrefabInstance:
   m_ObjectHideFlags: 0

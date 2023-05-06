@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{be8e5148-43dd-4695-bb7d-98f7757c2078}">
+		<property name="assetPath">
+			<value>mx_mummy_mystery_explore_loop1 MASTER.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>38.400022675736963</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9e71706a-f485-45ab-b94b-a3d09b2fa749}</destination>
+		</relationship>
+	</object>
+</objects>

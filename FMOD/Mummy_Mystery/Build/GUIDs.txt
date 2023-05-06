@@ -2,5 +2,7 @@
 {bd48d1fd-100b-0ff0-3472-2f49e445d9a1} bank:/Master.strings
 {d4736cef-0472-41ab-93a1-d031f2b0bb7d} bus:/
 {33054c2a-114d-4628-8097-ef4498b449d0} bus:/Reverb
-{9919fad1-2ca5-4f19-bdad-94d33e350af0} event:/Music
+{5c1d0b7f-fa07-4ed7-9cc2-7326c68c2c73} event:/footsteps
+{9919fad1-2ca5-4f19-bdad-94d33e350af0} event:/music
+{0e7af96f-afa4-40b1-a072-ae740d69a066} parameter:/Floor_type
 {000581c1-26bc-4fb3-99a8-4f660c046310} parameter:/game_status
