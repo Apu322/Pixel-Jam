@@ -56,7 +56,7 @@ MonoBehaviour:
   - {fileID: 2856514936763289342}
   MinDistance: 1
   MaxDistance: 20
-  Length: 73022
+  Length: 165662
 --- !u!114 &-550748083751835128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
   Name: game_status
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 3
   Default: 0
   ID:
     data1: 1870700092
@@ -106,7 +106,7 @@ MonoBehaviour:
   - {fileID: 7996541886426711264}
   StringsBanks:
   - {fileID: 3476025359337096027}
-  cacheTime: 638190148015097254
+  cacheTime: 638190465958668742
   cacheVersion: 131603
 --- !u!114 &2856514936763289342
 MonoBehaviour:
@@ -123,7 +123,7 @@ MonoBehaviour:
   Name: game_status
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 3
   Default: 0
   ID:
     data1: 1870700092
@@ -147,7 +147,7 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638190148015097254
+  lastModified: 638190465958668742
   FileSizes:
   - Name: Desktop
     Value: 1042
@@ -244,10 +244,10 @@ MonoBehaviour:
   Path: FMOD/Mummy_Mystery/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638190148015083616
+  lastModified: 638190465958651443
   FileSizes:
   - Name: Desktop
-    Value: 3312160
+    Value: 3204448
   Exists: 1
 --- !u!114 &8784590659080524253
 MonoBehaviour:

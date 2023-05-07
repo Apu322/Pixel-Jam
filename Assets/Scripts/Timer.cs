@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 10;
+    public float timeRemaining;
     public bool timerIsRunning = false;
     public Text timeText;
 
@@ -28,20 +28,19 @@ public class Timer : MonoBehaviour
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
 
-                // Check if the timeRemaining has reached xxx
 
-                if (timeRemaining >=0 && timeRemaining <=29)
+                if (timeRemaining >=0 && timeRemaining <=29.9999)
                 {
                     eventEmitter.SetParameter("timer", 4.0f);
                     
 
                 }
-                else if (timeRemaining >=30 && timeRemaining <=119)
+                else if (timeRemaining >=30 && timeRemaining <=119.9999)
                 {
                     eventEmitter.SetParameter("timer", 3.0f);
                 }
 
-                else if (timeRemaining >=120 && timeRemaining <=209)
+                else if (timeRemaining >=120 && timeRemaining <=209.9999)
                 {
                     eventEmitter.SetParameter("timer", 2.0f);
                 }
@@ -51,6 +50,7 @@ public class Timer : MonoBehaviour
             {
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
+                eventEmitter.SetParameter("game_status", 2.0f);
                 timerIsRunning = false;
             }
         }
