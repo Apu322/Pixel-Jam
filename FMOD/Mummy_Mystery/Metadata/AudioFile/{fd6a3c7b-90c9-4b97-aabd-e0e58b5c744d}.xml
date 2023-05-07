@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fd6a3c7b-90c9-4b97-aabd-e0e58b5c744d}">
+		<property name="assetPath">
+			<value>mx_mystery_1_melodic3.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>19.20002267573696</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9e71706a-f485-45ab-b94b-a3d09b2fa749}</destination>
+		</relationship>
+	</object>
+</objects>

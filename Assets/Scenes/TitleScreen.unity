@@ -391,7 +391,6 @@ GameObject:
   - component: {fileID: 1590134178}
   - component: {fileID: 1590134182}
   - component: {fileID: 1590134181}
-  - component: {fileID: 1590134183}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -481,7 +480,7 @@ MonoBehaviour:
       Data2: 1327049893
       Data3: -745230915
       Data4: -267766466
-    Path: event:/Music
+    Path: event:/mx_title_page
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -495,17 +494,3 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &1590134183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590134177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af841ed0805d4184b13332ab886b557, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodEmitter: {fileID: 1590134182}
-  parameterName: game_status

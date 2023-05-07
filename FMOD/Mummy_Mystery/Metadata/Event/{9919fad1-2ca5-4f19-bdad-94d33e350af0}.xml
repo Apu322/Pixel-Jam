@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9919fad1-2ca5-4f19-bdad-94d33e350af0}">
 		<property name="name">
-			<value>music</value>
+			<value>mx_title_page</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -242,24 +242,21 @@
 			<destination>{000581c1-26bc-4fb3-99a8-4f660c046310}</destination>
 		</relationship>
 		<relationship name="automationPoints">
-			<destination>{657e4f4f-57e8-4543-9a9c-b6cc9fe5c547}</destination>
-			<destination>{79109428-06b9-4bc5-93f0-5b6760d50c8d}</destination>
+			<destination>{19d885bb-2386-45d2-a88c-e9058add7771}</destination>
+			<destination>{06e76f39-2c0d-4bfb-9a89-a34bdfad772f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{618b3a4b-340b-4eb2-bb4e-9fd6aad8d096}" />
 	<object class="MixerBusFader" id="{1997de28-831a-4309-9b4f-ba6192388a4c}" />
-	<object class="AutomationPoint" id="{657e4f4f-57e8-4543-9a9c-b6cc9fe5c547}">
+	<object class="AutomationPoint" id="{19d885bb-2386-45d2-a88c-e9058add7771}">
 		<property name="position">
-			<value>0.001128668171557562</value>
+			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-12</value>
-		</property>
-		<property name="curveShape">
-			<value>0.498774558</value>
+			<value>0</value>
 		</property>
 	</object>
-	<object class="AutomationPoint" id="{79109428-06b9-4bc5-93f0-5b6760d50c8d}">
+	<object class="AutomationPoint" id="{06e76f39-2c0d-4bfb-9a89-a34bdfad772f}">
 		<property name="position">
 			<value>1</value>
 		</property>
