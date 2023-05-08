@@ -49,7 +49,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0.75942165, b: 0.4669811, a: 1}
-  m_Intensity: 0.75
+  m_Intensity: 0.2
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 000000001191b49f5d9ff1a0
@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 1306959553081997519}
   - component: {fileID: 1306959553081997512}
   - component: {fileID: 1306959553081997513}
-  - component: {fileID: 1306959553081997507}
   m_Layer: 7
   m_Name: Fronttorch
   m_TagString: Player
@@ -256,6 +255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torchCooldown: 10
   turnDownStart: 5
+  mainLight: {fileID: 0}
+  maxIntensity: 0.2
   lightType: Fronttorch
 --- !u!61 &1306959553081997513
 BoxCollider2D:
@@ -270,7 +271,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.000000059604645, y: -0.38210437}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -281,37 +282,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.05, y: 0.125}
+  m_Size: {x: 1.0525099, y: 0.8892086}
   m_EdgeRadius: 0
---- !u!68 &1306959553081997507
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306959553081997514}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -2.2036433, y: 0.02219987}
-  - {x: -2.1623278, y: -0.6938133}
-  - {x: -1.9978538, y: -1.0747187}
-  - {x: -1.7623241, y: -1.4328374}
-  - {x: -1.3097569, y: -1.8693457}
-  - {x: -0.6649804, y: -2.1651049}
-  - {x: 0.18702479, y: -2.2537854}
-  - {x: 0.9021679, y: -2.1165824}
-  - {x: 1.576078, y: -1.6538856}
-  - {x: 1.9654938, y: -1.1393175}
-  - {x: 2.2091126, y: -0.6104659}
-  - {x: 2.2480452, y: 0.011099914}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
