@@ -1,7 +1,9 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -11,51 +13,77 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private bool isDragging;
     private float rotationSpeed;
 
+    [SerializeField]
+    private GameObject pair;
+
+    [SerializeField]
+    private GameObject grabPoint;
+
+    private Vector3 diff;
+
     private void Start() 
     {
         initialPos = transform.localPosition;
         initialRotation = transform.eulerAngles;
-        rotationSpeed = 100;
+        rotationSpeed = 200;
         isDragging = false;
-        transform.localPosition = new Vector2(Random.Range(-600, 300), Random.Range(-10, 40));   
-        transform.Rotate(new Vector3(0, 0, Random.Range(0, 360))); 
+        transform.localPosition = new Vector2(Random.Range(-250, 250), Random.Range(-120, 120));   
+        transform.localEulerAngles = new Vector3(0, 0, Random.Range(0, 360)); 
     }
 
     private void Update() 
     {
-
-        if (isDragging && Input.GetKey(KeyCode.R))
+        if (isDragging)
         {
-         //   Debug.Log("asdf");
-            transform.Rotate(new Vector3(0, 0, transform.rotation.z + rotationSpeed * Time.deltaTime));
+            if (Input.GetKey(KeyCode.E))
+            {
+                transform.localEulerAngles = new Vector3(0, 0, transform.localEulerAngles.z + rotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKey(KeyCode.Q))
+            {
+                transform.localEulerAngles = new Vector3(0, 0, transform.localEulerAngles.z - rotationSpeed * Time.deltaTime);
+            }
         }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
-        isDragging = true;
+        if ((Input.mousePosition - grabPoint.transform.position).magnitude < 50)
+        {
+            diff = transform.position - Input.mousePosition;
+            isDragging = true;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
-        isDragging = true;
+        if (isDragging)
+        {
+            transform.position = diff + Input.mousePosition;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Vector3 rotation = transform.eulerAngles;
-        float posMag = (initialPos - new Vector2(transform.localPosition.x, transform.localPosition.y)).magnitude;
-        float rotMag = (initialRotation - rotation).magnitude;
-        Debug.Log("pos: " + posMag);
-        Debug.Log("rotMag: " + rotMag); 
-        if (posMag < 15 && rotMag < 5)
+        if (isDragging)
         {
-            transform.localPosition = initialPos;
-            Debug.Log("asdf");
-            GetComponent<DraggableItem>().enabled = false;
+            if (pair != null)
+            {
+                Vector3 rotation = transform.eulerAngles;
+                float posMag = (pair.transform.localPosition - new Vector3(transform.localPosition.x, transform.localPosition.y)).magnitude;
+                float rotMag = (pair.transform.localEulerAngles - rotation).magnitude;
+                Debug.Log("pos: " + posMag);
+                Debug.Log("rotMag: " + rotMag); 
+                if (posMag < 5 && rotMag < 5)
+                {
+                    GetComponent<Image>().color = Color.red;
+                    transform.GetComponent<DraggableItem>().enabled = false;
+                    pair.GetComponent<Image>().color = Color.red;
+                    pair.transform.GetComponent<DraggableItem>().enabled = false;
+                }
+            }
+            isDragging = false;
+
         }
-        isDragging = false;
     }
 }

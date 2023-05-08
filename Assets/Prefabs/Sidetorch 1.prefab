@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 8057208214714394700}
   - component: {fileID: 8057208214714394699}
   - component: {fileID: 8057208214714394698}
-  - component: {fileID: 8057208214714394697}
+  - component: {fileID: 7376365268291885211}
   m_Layer: 7
   m_Name: Sidetorch 1
   m_TagString: Player
@@ -255,9 +255,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torchCooldown: 10
   turnDownStart: 5
+  mainLight: {fileID: 0}
+  maxIntensity: 0
   lightType: Sidetorch
---- !u!68 &8057208214714394697
-EdgeCollider2D:
+--- !u!61 &7376365268291885211
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -269,19 +271,16 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.44935894, y: 0.025532126}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.16, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3987176, y: 2.0829694}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.08223772, y: -2.2368305}
-  - {x: 0.73020864, y: -2.1127567}
-  - {x: 1.402865, y: -1.6590683}
-  - {x: 1.9610858, y: -0.97070336}
-  - {x: 2.155953, y: -0.15850675}
-  - {x: 2.0289478, y: 0.80499756}
-  - {x: 1.4687784, y: 1.7041063}
-  - {x: 0.800815, y: 2.114234}
-  - {x: 0.05987005, y: 2.2480137}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
