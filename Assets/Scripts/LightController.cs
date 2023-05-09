@@ -7,8 +7,17 @@ public class LightController : MonoBehaviour
 
     private Rigidbody2D rigid;
     private Vector2 velocity;
+
+    private Animator anim;
     [SerializeField]
     private float forceMag;
+
+    private int lightCount;
+
+    [SerializeField]
+    private float maxVel;
+
+    private UnityEngine.Rendering.Universal.Light2D light;
 
     [SerializeField]
     private float frictionMag;
@@ -19,9 +28,12 @@ public class LightController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = transform.GetChild(1).GetComponent<Animator>();
+        lightCount = 4;
         magnitude = 5;
         velocity = Vector2.zero;
         rigid = GetComponent<Rigidbody2D>();
+        anim.Play("lit");
     }
 
     private void Update() 
@@ -42,5 +54,32 @@ public class LightController : MonoBehaviour
         Vector2 frictionForce = -rigid.velocity.normalized;
         frictionForce = frictionForce * frictionMag;
         rigid.velocity = rigid.velocity + force + frictionForce;
+        rigid.velocity = new Vector2(Mathf.Clamp(rigid.velocity.x, -maxVel, maxVel), Mathf.Clamp(rigid.velocity.y, -maxVel, maxVel));
+    }
+
+    public void DecreaseCount()
+    {
+        if (lightCount == 0)
+            anim.Play("unlit");
+            return;
+        lightCount--;
+        light.intensity = 0.5f * lightCount / 4;
+
+    }
+
+    public void IncreaseCount()
+    {
+        if (lightCount == 4)
+            return;
+
+        anim.Play("lit");
+        lightCount++;
+        light.intensity = 0.5f * lightCount / 4;
+
+    }
+
+    public int GetCount()
+    {
+        return lightCount;
     }
 }

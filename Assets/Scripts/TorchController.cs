@@ -12,10 +12,19 @@ public class TorchController : MonoBehaviour
     private float turnDownStart;
 
     [SerializeField]
+    private LightController mainLight;
+
+    private float timePassedNormal;
+
+    [SerializeField]
+    private float maxIntensity;
+
+    [SerializeField]
     private string lightType;
 
     private Animator anim;
     private float timePassedLit;
+
 
     private UnityEngine.Rendering.Universal.Light2D light;
     // Start is called before the first frame update
@@ -30,26 +39,33 @@ public class TorchController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (light.enabled || mainLight.GetCount() == 0)
+            return;
         light.enabled = true;
-        //col.transform.parent.GetComponent<LightController>().intensity -= 0.25f;
+        mainLight.DecreaseCount();
         anim.Play(lightType + "_lit");
-        light.intensity = 1;
+        light.intensity = maxIntensity;
         timePassedLit = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timePassedLit > torchCooldown)
+        if (light.enabled)
         {
-            light.enabled = false;
-            anim.Play(lightType + "_unlit");
-            timePassedLit = 0;
+            if (timePassedLit > torchCooldown)
+            {
+                light.enabled = false;
+                anim.Play(lightType + "_unlit");
+                mainLight.IncreaseCount();
+                timePassedLit = 0;
+            }
+            else if (timePassedLit > turnDownStart)
+            { 
+                light.intensity = Mathf.Lerp(maxIntensity, 0, timePassedLit / torchCooldown);
+            }
+            timePassedLit += Time.deltaTime;
+
         }
-        else if (light.enabled && timePassedLit > turnDownStart)
-        { 
-            light.intensity = Mathf.Lerp(1, 0, timePassedLit / torchCooldown);
-        }
-        timePassedLit += Time.deltaTime;
     }
 }
